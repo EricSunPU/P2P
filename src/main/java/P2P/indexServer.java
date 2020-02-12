@@ -5,13 +5,8 @@ import java.io.*;
 
 public class indexServer {
     public static void main(String[] args) throws IOException {
-        
-        if (args.length != 1) {
-            System.err.println("Usage: java KnockKnockServer <port number>");
-            System.exit(1);
-        }
 
-        int portNumber = Integer.parseInt(args[0]);
+        int portNumber = 8080;
 
         try ( 
             ServerSocket serverSocket = new ServerSocket(portNumber);
