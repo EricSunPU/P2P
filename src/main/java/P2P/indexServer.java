@@ -7,6 +7,7 @@ public class indexServer {
     public static void main(String[] args) throws IOException {
 
         int portNumber = 8080;
+        System.out.println("Initializing Index Server at port 8080...");
 
         try ( 
             ServerSocket serverSocket = new ServerSocket(portNumber);
@@ -16,7 +17,7 @@ public class indexServer {
             BufferedReader in = new BufferedReader(
                 new InputStreamReader(clientSocket.getInputStream()));
         ) {
-        
+            System.out.println("Index Server Running at Port 8080...");
             String inputLine, outputLine;
             
             // Initiate conversation with client

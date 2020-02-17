@@ -30,5 +30,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'P2P.App'
+    mainClassName = 'P2P.indexServer'
 }
